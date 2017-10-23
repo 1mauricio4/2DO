@@ -1,9 +1,32 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: green;
+  background-color: DeepSkyBlue;
+  text-align: center;
+  color: DarkSlateGray;
 }
 
 a {
   color: #00B7FF;
 }
+
+  h1 {
+  color: Seashell;
+  font-size: 3rem;
+  transition-property: background-color;
+  transition-duration: 750ms;
+}
+
+h1:hover {
+  background-color: Gold;
+}
+
+.list li {
+  transition-property: background-color;
+  transition-duration: 500ms;
+}
+
+ .list li:hover {
+   background-color: Gold;
+   font-size: 1.25rem;
+ }
