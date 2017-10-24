@@ -15,15 +15,15 @@
   </div>
 
 <div class = "list">
- <ol>
-   <ul><strong>ONE</strong> Pick up Sarah at 3pm. <button type="button">Delete</button></ul>
-   <ul><strong>TWO</strong> Do laundry before in-laws come home. <button type="button">Delete</button></ul>
-   <ul><strong>THREE</strong> Make kids dinner. <button type="button">Delete</button></ul>
-   <ul><strong>FOUR</strong> Don't panic. <button type="button">Delete</button></ul>
-   <ul><strong>FIVE</strong> Repeat step four. <button type="button">Delete</button></ul>
-  <br />
-   <form action="/action_page.php">
-
+  <form action="/action_page.php" method="get">
+  <input type="checkbox" name="listNames" value="first" checked> Pick up Sarah at 3pm. <button type="button">Delete</button></li><br>
+  <input type="checkbox" name="listNames" value="second"> Do laundry before in-laws come home. <button type="button">Delete</button></li><br>
+  <input type="checkbox" name="listNames" value="second" checked> Make kids dinner. <button type="button">Delete</button><br>
+  <input type="checkbox" name="listNames" value="second"> Don't panic. <button type="button">Delete</button><br>
+  <input type="checkbox" name="listNames" value="second"> Repeat step four. <button type="button">Delete</button><br>
+</form>
+<br />
+<form action="/action_page.php">
 Task: <input type="text" name="task" value=""><br>
 <input type="submit" value="Submit">
 </form>
