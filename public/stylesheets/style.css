@@ -14,16 +14,24 @@ a {
   color: Seashell;
   font-size: 3rem;
   transition-property: background-color;
+  transition-property: color;
   transition-duration: 750ms;
 }
 
 h1:hover {
   background-color: Gold;
+  color: green;
 }
 
 .list li {
   transition-property: background-color;
-  transition-duration: 500ms;
+  transition-duration: 650ms;
+  transition-property: font-size;
+  transition-delay: .75s;
+  max-height: 50px;
+  transition-timing-function: ease;
+  transition: font-size 450ms ease-in 450ms;
+}
 }
 
  .list li:hover {
