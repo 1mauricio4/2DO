@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>2DO</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="/javascripts/jojo.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
+    <h1>2DO</h1>
 
   <div class = "description">
-    <h2>Do you have something you need <%= title %>?</h2>
+    <h2>Do you have something you need 2DO?</h2>
     <img src="/images/prod.jpg" alt="Productivity" />
     <h3>2DO keeps track of the things you need <em>to do</em> so you don't have to!</h3>
   </div>
 
 <div class = "list">
  <ol>
-   <ul><strong>ONE</strong> Pick up Sarah at 3pm. <button type="button">Delete</button></ul>
-   <ul><strong>TWO</strong> Do laundry before in-laws come home. <button type="button">Delete</button></ul>
-   <ul><strong>THREE</strong> Make kids dinner. <button type="button">Delete</button></ul>
-   <ul><strong>FOUR</strong> Don't panic. <button type="button">Delete</button></ul>
-   <ul><strong>FIVE</strong> Repeat step four. <button type="button">Delete</button></ul>
+   <% for(var i in todos) { %>
+   <ul><strong>ONE</strong> <%= todos[i].name %> <a class="button" href="/delete?id=<%= todos[i]._id %>">Delete</a></ul>
+   <% } %>
   <br />
-   <form action="/action_page.php">
-
-Task: <input type="text" name="task" value=""><br>
-<input type="submit" value="Submit">
-</form>
+  <form action="/pandah">
+    Task: <input type="text" name="task" value=""><br>
+    <input type="submit" value="Submit">
+  </form>
  </ol>
  </div>
 
